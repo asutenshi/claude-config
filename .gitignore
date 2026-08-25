@@ -1,0 +1,11 @@
+# Deny-by-default: ignore everything, then explicitly allow the
+# small set of files that make up the portable Claude Code config.
+# This keeps secrets, transcripts, caches, and other local/private
+# state out of the repo even if new files show up here later.
+/*
+
+!.gitignore
+!README.md
+!CLAUDE.md
+!settings.json
+!statusline-command.sh
